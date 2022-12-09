@@ -29,6 +29,7 @@ function cargarEventListener(){
          title: 'Vaciaste tu carrito'
        })
        articulosCarrito = [];
+       localStorage.clear();
        limpiarHTML();
      })
    botonComprar.addEventListener('click', ()=>{

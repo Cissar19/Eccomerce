@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "sweetalert2": "^11.6.15"
+  },
+  "name": "eccomerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cissar19/Eccomerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cissar19/Eccomerce/issues"
+  },
+  "homepage": "https://github.com/Cissar19/Eccomerce#readme",
+  "description": ""
+}
