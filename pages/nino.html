@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eccomerce Vestimenta</title>
+        <link rel="shortcut icon" href="/assets/images/favicons.ico/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/style.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <header class="navbar-contenedor" >
+            <nav>
+                <ul class="navbar-contenedor--li">
+                    <li class="navbar-contenedor--li"><a class="navbar-contenedor--a" href=""><img class="logo" src="/assets/images/Logo.png" alt=""></a></li>
+                    <section class="navbar-contenedor--li">
+                        <li class="navbar-contenedor--li"><a class="navbar-contenedor--a" href="../index.html">Inicio</a></li>
+                        <li class="navbar-contenedor--li"><a class="navbar-contenedor--a" href="mujer.html">Mujer</a></li>
+                        <li class="navbar-contenedor--li"><a class="navbar-contenedor--a" href="hombre.html">Hombre</a></li>
+                        <li class="navbar-contenedor--li"><a class="navbar-contenedor--a" href="nino.html">Niños</a></li>
+                        <li class="navbar-contenedor--li"><a class="navbar-contenedor--a" href="nosotros.html">API DOLAR</a></li>
+                        <li class="navbar-contenedor--li"><a class="navbar-contenedor--a" href="contacto.html">Contacto</a></li>
+                    </section>
+                        <button type="button" class="btn btn-light btn-lg carro btn-carro"> Carrito
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+
+                            
+                            <div id="carrito" class="two columns u-pull-right">
+                                    
+                                <table id="lista-carrito" class="u-full-width" >
+                                    <thead>
+                                        <tr class= "tipografia-1">
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class= "tipografia"></tbody>
+                                </table>
+                                <a href="#" id="boton-comprar" class="btn btn-success u-full-width">Comprar Carrito</a>
+                                <a href="#" id="vaciar-carrito" class="btn btn-danger u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <body>
+            <section class="section-cards" id="lista-articulos">
+                <div class = "container">
+                    <div class = "heading-title">
+                        <h1>Vestimenta de Niño</h1>
+                        <p>Descubre en ripley.com todo en ropa niño, con increíbles precios y oportunidades exclusivas..</p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-4 g-4" id="lista-cursos">
+                        <div class="col">
+                            <div class="card">
+                            <img src="/assets/images/nino/nino-1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">PIJAMA NIÑO NORMAL</h5>
+                                <p class="precio">$8.990</p>
+                                <button type="button" class="btn btn-primary agregar-carrito" data-id="1">AÑADIR AL CARRO</button>
+                            </div>
+                        </div> 
+                    </div>
+
+
+
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="/assets/images/nino/nino-3.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PIJAMA SPIDERMAN</h5>
+                                    <p class="precio">$18.990</p>
+                                    <button type="button" class="btn btn-primary agregar-carrito" data-id="3">AÑADIR AL CARRO</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="/assets/images/nino/nino-4.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PIJAMA AMOUNG US</h5>
+                                    <p class="precio">$11.990</p>
+                                    <button type="button" class="btn btn-primary agregar-carrito" data-id="4">AÑADIR AL CARRO</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="/assets/images/nino/nino-5.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PIJAMA AMOUNG US</h5>
+                                    <p class="precio">$10.990</p>
+                                    <button type="button" class="btn btn-primary agregar-carrito" data-id="5">AÑADIR AL CARRO</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="/assets/images/nino/nino-6.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PIJAMA HERRAMIENTAS</h5>
+                                    <p class="precio price">$16.990</p>
+                                    <button type="button" class="btn btn-primary agregar-carrito" data-id="6">AÑADIR AL CARRO</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="/assets/images/nino/nino-7.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PIJAMA STAR WARS</h5>
+                                    <p class="precio price">$12.990</p>
+                                    <button type="button" class="btn btn-primary agregar-carrito" data-id="7">AÑADIR AL CARRO</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="/assets/images/nino/nino-8.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title ">PIJAMA ROCK</h5>
+                                    <p class="precio price">$11.990</p>
+                                    <button type="button" class="btn btn-primary agregar-carrito" data-id="8">AÑADIR AL CARRO</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>   
+            </section>
+
+
+
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content-container">
+                    <h3 class="website-logo">Eccomerce</h3>
+                    <span class="footer-info">+56 9 9196 0258</span>
+                    <span class="footer-info">Eccomerce@gmail.com</span>
+                </div>
+                <div class="footer-menus">
+                    <div class="footer-content-container">
+                        <span class="menu-title">menu</span>
+                        <a href="" class="menu-item-footer">Mujer</a>
+                        <a href="" class="menu-item-footer">Hombre</a>
+                        <a href="" class="menu-item-footer">Niños</a>
+                    </div>
+                    <div class="footer-content-container">
+                        <span class="menu-title">legal</span>
+                        <a href="" class="menu-item-footer">Privacy Policy</a>
+                        <a href="" class="menu-item-footer">Cookies</a>
+                        <a href="" class="menu-item-footer">Legal Advice</a>
+                    </div>
+                </div>
+                
+                <div class="footer-content-container">
+                    <span class="menu-title">follow us</span>
+                    <div class="social-container">
+                        <a href="" class="social-link"></a>
+                        <a href="" class="social-link"></a>
+                        <a href="" class="social-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-container">
+                <span class="copyright">Copyright 2021, Ecommerce.cl. All rights reserved.</span>
+            </div>
+        </footer>
+        <script src="/js/script.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
