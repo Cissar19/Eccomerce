@@ -5,12 +5,12 @@ import logo from '../../assets/images/logo.png'
 export default function Navbar() {
   return (
     <>
-        <header class="header">
-            <div class="logo">
+        <header className="header">
+            <div className="logo">
                 <img src={logo} alt="Logo de la marca"/>
             </div>
             <nav>
-            <ul class="nav-links">
+            <ul className="nav-links">
                     <li><a href="/">Inicio</a></li>
                     <li><a href="/">Comics</a></li>
                     <li><a href="/">Informatica</a></li>
@@ -18,7 +18,7 @@ export default function Navbar() {
                     <li><a href="/">Contacto</a></li>
             </ul>            
             </nav>
-            <a class="btn" href="/"><button>Carrito</button></a>
+            <a className="btn" href="/"><button>Carrito</button></a>
         </header>
     </>
   )
