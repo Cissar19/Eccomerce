@@ -1,39 +1,38 @@
 const databaseItems = [
     {
         id:1,
-        title: "The flash",
+        title: "Batman: La Broma Asesina - Edición Deluxe En Blanco Y Negro",
         category:"Comics",
         stock:1,
-        imgurl:"",
-        price:7894,
-        detail:"lorem"
+        imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_873213-MLC49233612771_022022-F.webp",
+        price:"32.934",
+        detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
         id:2,
-        title: "Daredevil",
+        title: "Batman: La Broma Asesina - Edición Deluxe En Blanco Y Negro",
         category:"Comics",
         stock:1,
-        imgurl:"",
-        price:7344,
-        detail:"lorem"
+        imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_873213-MLC49233612771_022022-F.webp",
+        price:"32.934",
+        detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
         id:3,
-        title: "Batman",
+        title: "Batman: La Broma Asesina - Edición Deluxe En Blanco Y Negro",
         category:"Comics",
         stock:1,
-        imgurl:"",
-        price:9794,
-        detail:"lorem"
-    }
-     
+        imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_873213-MLC49233612771_022022-F.webp",
+        price:"32.934",
+        detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
+    },
 ]
 
 function getItems() {
     return new Promise((resolve, reject) => {
        setTimeout(() =>{
-            resolve({databaseItems})
-        }, 5000)
+            resolve(databaseItems)
+        }, 1000)
     })
 }
 
