@@ -13,7 +13,7 @@ export default function Navbar() {
             <ul className="nav-links">
                     <li><a href="/">Inicio</a></li>
                     <li><a href="/">Comics</a></li>
-                    <li><a href="/">Informatica</a></li>
+                    <li><a href="/">Funkos</a></li>
                     <li><a href="/">Nosotros</a></li>
                     <li><a href="/">Contacto</a></li>
             </ul>            

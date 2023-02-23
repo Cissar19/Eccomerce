@@ -8,7 +8,6 @@ export default function ItemListContainer() {
 
     const [products, setProducts] = useState([])
 
-
     useEffect(()=>{
         getItems().then((respuesta)=>{
             console.log(respuesta)
