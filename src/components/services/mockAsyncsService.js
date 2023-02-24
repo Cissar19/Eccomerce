@@ -185,8 +185,21 @@ function getItems() {
     return new Promise((resolve, reject) => {
        setTimeout(() =>{
             resolve(databaseItems)
-        }, 1000)
+        }, 1)
     })
 }
+
+export function getSingleItem(itemid) {
+        let intemReq = databaseItems.find((item)=> {
+            return item.id === Number(itemid)
+        })
+
+    return new Promise((resolve)=>{
+        setTimeout(() =>{
+            resolve(intemReq)
+        }, 1)
+    })
+}
+
 
 export default getItems

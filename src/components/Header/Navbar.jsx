@@ -29,7 +29,7 @@ export default function Navbar() {
                     </li>
             </ul>            
             </nav>
-            <Link className="btn" to="/"><button>Carrito</button> </Link>
+            <Link to="/"><button className="btn" >Carrito</button> </Link>
         </header>
     </>
   )

@@ -12,7 +12,7 @@ export default function App() {
         <Navbar/>
         <Routes>
             <Route path="/" element={<ItemListContainer/> }/>
-            <Route path="/detalle" element={<ItemDetailContainer/>}/>
+            <Route path="/item/:itemid" element={<ItemDetailContainer/>}/>
         </Routes>
         <Footer/>
     </BrowserRouter>
