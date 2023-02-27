@@ -7,7 +7,6 @@ import ItemDetailContainerCount from './ItemDetailContainerCount';
 
 export default function ItemDetailContainer() {
   let {itemid} = useParams()
-  console.log(useParams())
   const [product, setProduct] = useState([]);
 
   useEffect(()=>{
@@ -32,7 +31,6 @@ export default function ItemDetailContainer() {
           <span>$ {product.price}</span>
           <ItemDetailContainerCount/>
         </div>
-
       </div>
 
 
