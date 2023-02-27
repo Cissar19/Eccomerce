@@ -1,15 +1,25 @@
 import React from 'react'
-
+import { useState } from 'react'
 export default function ItemDetailContainerCount() {
+
+    const [count, setCount] = useState(1)
+
+    const disminuir = ()=>{
+        setCount(count - 1)
+    }
+    const aumentar = ()=>{
+        setCount(count + 1)
+    }
+
   return (
     <>
         <div className='div-flex'>
-            <button>-</button>
-            <p>Stock:1</p>
-            <button>+</button>
+            <button disabled={count <= 1} onClick={disminuir}>-</button>
+            <p>{count}</p>
+            <button onClick={aumentar}>+</button>
         </div>
 
-        <div className='div-flex'>
+        <div className='div-comprar'>
             <button>Comprar Ahora</button>
         </div>
 

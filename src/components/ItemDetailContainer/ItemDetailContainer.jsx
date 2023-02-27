@@ -27,7 +27,7 @@ export default function ItemDetailContainer() {
       <div className='div2'>
         <div>
           <h1>{product.title}</h1>
-          <p>{product.description}</p>
+          <p>{product.detail}</p>
           <span>$ {product.price}</span>
           <ItemDetailContainerCount/>
         </div>

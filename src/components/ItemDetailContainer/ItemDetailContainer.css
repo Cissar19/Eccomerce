@@ -25,10 +25,10 @@
 .div2 { 
   grid-area: 1 / 2 / 2 / 3; 
   display: flex;
-  text-align: justify;
   text-justify: inter-word;
-  justify-content: center;
+  justify-content:inherit;
   text-align: center;
+  padding: 40px;
 }
 
 .div-flex { 
@@ -37,4 +37,14 @@
   text-justify: inter-word;
   justify-content: center;
   text-align: center;
+  
+}
+.div-comprar{
+  display: flex;
+  text-align: justify;
+  text-justify: inter-word;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  
 }

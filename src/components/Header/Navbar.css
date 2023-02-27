@@ -59,7 +59,7 @@ body{
     color: #858585;
 }
 
-.header .btn button{
+button{
     font-weight: 700;
     color: #1b3039;
     padding: 9px 25px;
@@ -69,8 +69,7 @@ body{
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-
-.header .btn button:hover{
+button:hover{
     background-color: #e2f1f8;
     color: #545454;
     transform: scale(1.1);
