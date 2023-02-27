@@ -13,14 +13,14 @@ export default function ItemDetailContainer() {
     getSingleItem(itemid).then((respuesta)=>{
       setProduct(respuesta)
     })
-  },[])
+  },[itemid])
 
 
   return (
     <section className='contendor'>
       <div className='div1'>
-        <div className='div1-img'>
-          <img src={product.imgurl} alt="Imagen Detalle"/>
+        <div >
+          <img className='div1-img' src={product.imgurl} alt="Imagen Detalle"/>
         </div>
       </div>
 

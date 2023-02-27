@@ -7,19 +7,21 @@ export default function Navbar() {
   return (
     <>
         <header className="header">
+          <Link to="/">
             <div className="logo">
                 <img src={logo} alt="Logo de la marca"/>
             </div>
+          </Link>
             <nav>
             <ul className="nav-links">
                     <li>
                       <Link to="/">Inicio</Link>
                     </li>
                     <li>
-                      <Link to="/detalle">Comics</Link>
+                      <Link to="/category/Marvel">Comics</Link>
                     </li>
                     <li>
-                      <Link to="/">Funkos</Link>
+                      <Link to="/category/Funko">Funkos</Link>
                     </li>
                     <li>
                       <Link to="/">Nosotros</Link>

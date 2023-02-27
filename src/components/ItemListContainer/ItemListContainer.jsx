@@ -1,18 +1,25 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import Item from '../Item/Item'
 import '../ItemListContainer/ItemListContainer.css'
-import getItems from '../services/mockAsyncsService'
+import getItems, { getItemsByCategory } from '../services/mockAsyncsService'
 
 
 export default function ItemListContainer() {
-
+    let {categoryid} = useParams()
     const [products, setProducts] = useState([])
 
     useEffect(()=>{
-        getItems().then((respuesta)=>{
-            setProducts(respuesta) 
-        })
-    },[])
+        if(categoryid){
+            getItemsByCategory(categoryid).then((respuesta)=>{
+                setProducts(respuesta)
+            })
+        }else{
+            getItems().then((respuesta)=>{
+                setProducts(respuesta)
+            })
+        }
+    },[categoryid])
 
   return (
     <section className='section'>

@@ -2,7 +2,7 @@ const databaseItems = [
     {
         id:1,
         title: "Batman: La Broma Asesina - Edición Deluxe En Blanco Y Negro",
-        category:"Marvel Comics",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_873213-MLC49233612771_022022-F.webp",
         price:"32.934",
@@ -11,7 +11,7 @@ const databaseItems = [
     {
         id:2,
         title: "Civil War Marvel Must-have",
-        category:"Marvel Comics",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_994778-MLC44299215903_122020-F.webp",
         price:"32.934",
@@ -20,7 +20,7 @@ const databaseItems = [
     {
         id:3,
         title: "Marvel El Asombroso Spiderman Vol. 2 - Hasta Que Las Estrellas Se Congelen - Panini",
-        category:"Marvel Comics",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_761277-MLC48956739709_012022-F.webp",
         price:"32.934",
@@ -29,7 +29,7 @@ const databaseItems = [
     {
         id:4,
         title: "Marvel Vs Dc (libro Ensayo) - Planeta",
-        category:"Marvel Comics",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_727937-MLC48959093648_012022-F.webp",
         price:"32.934",
@@ -38,7 +38,7 @@ const databaseItems = [
     {
         id:5,
         title: "X-men Comic Super Heroes Collection / Marvel",
-        category:"Marvel Comics",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_939880-MLC50060957059_052022-F.webp",
         price:"32.934",
@@ -47,7 +47,7 @@ const databaseItems = [
     {
         id:6,
         title: "Civil War Marvel De Luxe",
-        category:"Marvel Comics",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_702815-MLA49411115388_032022-F.webp",
         price:"32.934",
@@ -55,8 +55,8 @@ const databaseItems = [
     },
     {
         id:7,
-        title: "Marvel Comics Marvel Deluxe: Los Vengadores V/s X-men 1",
-        category:"Marvel Comics",
+        title: "Marvel Marvel Deluxe: Los Vengadores V/s X-men 1",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_790726-MLC48329139872_112021-F.webp",
         price:"32.934",
@@ -65,7 +65,7 @@ const databaseItems = [
     {
         id:8,
         title: "Comic Iron Man Tony Stark 1 Un Hombre Hecho A Si Mismo Marvel",
-        category:"Marvel Comics",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_935575-MLC46219607021_052021-F.webp",
         price:"32.934",
@@ -73,8 +73,8 @@ const databaseItems = [
     },
     {
         id:9,
-        title: "Marvel Comics Thanos - Primer Nueva Trilogía (tapa Dura)",
-        category:"Marvel Comics",
+        title: "Marvel Thanos - Primer Nueva Trilogía (tapa Dura)",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_707044-MLC44527026672_012021-F.webp",
         price:"32.934",
@@ -82,8 +82,8 @@ const databaseItems = [
     },
     {
         id:10,
-        title: "Marvel Comics Marvel Saga - El Asombroso Spiderman N°16: La Primera Cacería De Kraven (tapa Dura)",
-        category:"Marvel Comics",
+        title: "Marvel Marvel Saga - El Asombroso Spiderman N°16: La Primera Cacería De Kraven (tapa Dura)",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_979616-MLC44494921291_012021-F.webp",
         price:"32.934",
@@ -91,8 +91,8 @@ const databaseItems = [
     },
     {
         id:11,
-        title: "Marvel Comics Veneno - Origen Oscuro (tapa Dura)",
-        category:"Marvel Comics",
+        title: "Marvel Veneno - Origen Oscuro (tapa Dura)",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_796752-MLC44527338270_012021-F.webp",
         price:"32.934",
@@ -101,7 +101,7 @@ const databaseItems = [
     {
         id:12,
         title: "Dk El Libro De Marvel",
-        category:"Marvel Comics",
+        category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_650725-MLC49786878723_042022-F.webp",
         price:"32.934",
@@ -110,7 +110,7 @@ const databaseItems = [
     {
         id:13,
         title: "Marvel Hombre Araña upgraded suit Spider-Man: No Way Home 57634",
-        category:"Marvel Comics",
+        category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_817324-MLA52223355370_102022-F.webp",
         price:"32.934",
@@ -193,13 +193,19 @@ export function getSingleItem(itemid) {
         let intemReq = databaseItems.find((item)=> {
             return item.id === Number(itemid)
         })
-
     return new Promise((resolve)=>{
         setTimeout(() =>{
             resolve(intemReq)
         }, 1)
     })
 }
-
+export function getItemsByCategory(categoryid) {
+    let itemsCat = databaseItems.filter((item)=>item.category === categoryid)
+    return new Promise((resolve)=>{
+        setTimeout(() =>{
+            resolve(itemsCat)
+        }, 1)
+    })
+    }
 
 export default getItems
