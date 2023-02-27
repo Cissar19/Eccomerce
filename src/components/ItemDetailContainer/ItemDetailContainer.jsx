@@ -3,6 +3,7 @@ import '../ItemDetailContainer/ItemDetailContainer.css'
 import { getSingleItem }  from '../services/mockAsyncsService'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import ItemDetailContainerCount from './ItemDetailContainerCount';
 
 export default function ItemDetailContainer() {
   let {itemid} = useParams()
@@ -29,17 +30,9 @@ export default function ItemDetailContainer() {
           <h1>{product.title}</h1>
           <p>{product.description}</p>
           <span>$ {product.price}</span>
-          <div className='div-flex'>
-            <button>-</button>
-            <p>Stock:1</p>
-            <button>+</button>
-          </div>
-          <div className='div-flex'>
-            <button>Comprar Ahora</button>
-          </div>
-
-
+          <ItemDetailContainerCount/>
         </div>
+
       </div>
 
 
