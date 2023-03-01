@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../ItemDetailContainer/ItemDetailContainer.css'
 import { getSingleItem }  from '../services/mockAsyncsService'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetailContainerCount from './ItemDetailContainerCount';
+import { cartContext } from '../../storage/cartContext';
 
 export default function ItemDetailContainer() {
   let {itemid} = useParams()
+  let {addItem} = useContext(cartContext)
   const [product, setProduct] = useState([]);
+
+  function handleAddTocart(count){
+    alert(`Agregaste ${count} de ${product.title} al carrito`)
+    product.count = count
+    
+    addItem(product)
+  
+  }
 
   useEffect(()=>{
     getSingleItem(itemid).then((respuesta)=>{
@@ -29,7 +39,7 @@ export default function ItemDetailContainer() {
           <h1>{product.title}</h1>
           <p>{product.detail}</p>
           <span>$ {product.price}</span>
-          <ItemDetailContainerCount/>
+          <ItemDetailContainerCount onAddToCart={handleAddTocart}/>
         </div>
       </div>
 

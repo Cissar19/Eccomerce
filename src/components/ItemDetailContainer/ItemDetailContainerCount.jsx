@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-export default function ItemDetailContainerCount() {
+export default function ItemDetailContainerCount({onAddToCart}) {
 
     const [count, setCount] = useState(1)
 
@@ -20,7 +20,7 @@ export default function ItemDetailContainerCount() {
         </div>
 
         <div className='div-comprar'>
-            <button>Comprar Ahora</button>
+            <button onClick={()=>onAddToCart(count)}>Comprar Ahora</button>
         </div>
 
     </>
