@@ -4,6 +4,7 @@ import { cartContext } from "../../storage/cartContext";
 import { createBuyOrder } from "../services/firebase";
 import "./CartContainer.css";
 import Swal from 'sweetalert2'
+import DeleteIcon from "../Icons/DeleteIcon";
 
 function CartContainer() {
   const { cart, clearCart, removeProduct, totalPrice} = useContext(cartContext);
@@ -56,7 +57,7 @@ function CartContainer() {
               <td>$ {item.price}</td>
               <td>{item.count}</td>
               <td>
-               <button onClick={()=>removeProduct(item.id)}>X</button>
+               <button onClick={()=>removeProduct(item.id)}><DeleteIcon/></button>
               </td>
               <th>$ {item.count * item.price}</th>
             </tr>

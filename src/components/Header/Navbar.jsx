@@ -4,6 +4,7 @@ import logo from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { cartContext } from '../../storage/cartContext'
+import CartIcon from '../Icons/CartIcon'
 
 export default function Navbar() {
 
@@ -37,8 +38,10 @@ const {totalProducts} = useContext(cartContext)
             </ul>            
             </nav>
             <Link to="/carrito">
-              <button className="btn" >Carrito</button>
-              <span>{totalProducts() || ''}</span>
+              <button className="btn" ><CartIcon/>
+              <span className='cart-widget'>{totalProducts() || ''}</span>
+              </button>
+              
             </Link>
         </header>
     </>
