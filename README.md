@@ -1,18 +1,21 @@
-# Getting Started with Create React App
+# Eccomerce Contreras
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue realizado para aprobar el curso de ReactJs en CoderHouse. Se utilizaron herramientas de ReactJs tales como, componentes JSX,Props, Hooks(useState, useEffect, useParams), Context, Asincronia y Firebase.
 
-## Available Scripts
+El proyecto simula un eccomerce de venta de Comics y Funkos. En el inicio se renderizan las dos categorias juntas. Pero tambien esta la opcion de visitar cada categoria por separada.
 
-In the project directory, you can run:
+## Componentes
 
-### `npm start`
+Los componentes principales del Eccomerce son:
+-ItemListContainer
+-ItemDetailContainer
+-Item
+-Services
+-CartContainer
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ItemListContainer
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dentro del componente ItemListContainer se encuentra
 
 ### `npm test`
 
