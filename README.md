@@ -1,6 +1,6 @@
 # Eccomerce Contreras
 
-Este proyecto fue realizado para aprobar el curso de ReactJs en CoderHouse. Se utilizaron herramientas de ReactJs tales como, componentes JSX,Props, Hooks(useState, useEffect, useParams), Context, Asincronia y Firebase.
+Este proyecto fue realizado para aprobar el curso de ReactJs en CoderHouse. Se utilizaron herramientas de ReactJs tales como, componentes JSX,Props, Hooks(useState, useEffect, useParams),Router-Dom, Context, Asincronia y Firebase.
 
 El proyecto simula un eccomerce de venta de Comics y Funkos. En el inicio se renderizan las dos categorias juntas. Pero tambien esta la opcion de visitar cada categoria por separada.
 
@@ -13,61 +13,37 @@ Los componentes principales del Eccomerce son:
 -Services
 -CartContainer
 
-### ItemListContainer
+### Componente ItemListContainer
 
-Dentro del componente ItemListContainer se encuentra
+Dentro del componente ItemListContainer se encuentra el uso del Hook useEffect ya que es necesario dado que se necesita almacenar y renderizar de forma correcta el nuevo componente.
 
-### `npm test`
+Tambien se puede encontrar el componente Item el cual se mapea para asi iterar el array, El componente Item tambienrecibe props :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+            <Item
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                price={item.price}
+                detail={item.detail}
+                imgurl={item.imgurl}
+            />
 
-### `npm run build`
+### Componente Item
+En el componente Item, se imprimen con jsx las props recibidas anteriormente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ItemDetailContainer
+Este componente se encarga de renderizar el detalle del producto, una vez que seleccionamos el boton de "Más Detalles" (Ubicado en Item). Este componente llama a otro (ItemDetailContainerCount) que se encarga con logica Js de contabilizar los eventos onclick de stock.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Header
+Dentro de la carpeta Header se puede encontrar el componente Navbar, que ayuda con la navegacio del sitio. Se aplico Router-Dom para que no existieran recargas, es decir, que todos los href se remplazaron con Link
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Context
+Se encarga de globalizar todo lo que necisitemos en otros componentes, en este caso. Se utilizo para compartir a otros componentes toda la logica del carrito de compras. Como por ejemplo AddItem, ClearCart, RemoveItem, etc...
 
-### `npm run eject`
+### Firebase
+Se subio toda la data a una db, y desde ahi se consumen todos los datos del eccomerce, tambien crea la orden de compra con su id respectivo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
