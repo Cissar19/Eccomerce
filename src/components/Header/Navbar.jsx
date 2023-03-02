@@ -30,11 +30,8 @@ const {totalProducts} = useContext(cartContext)
                       <Link to="/category/Funko">Funkos</Link>
                     </li>
                     <li>
-                      <Link to="/">Nosotros</Link>
+                      <Link to="/nosotros">Nosotros</Link>
                       </li>
-                    <li>
-                      <Link to="/">Contacto</Link>
-                    </li>
             </ul>            
             </nav>
             <Link to="/carrito">

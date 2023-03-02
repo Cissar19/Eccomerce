@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import { CartContextProvider } from './storage/cartContext';
 import CartContainer from './components/CartContainer/CartContainer';
 import { exportData} from './components/services/firebase';
+import Nosotros from './components/Nosotros/Nosotros';
 
 
 
@@ -21,6 +22,7 @@ export default function App() {
               <Route path="/category/:categoryid" element={<ItemListContainer/> }/>
               <Route path="/item/:itemid" element={<ItemDetailContainer/>}/>
               <Route path="/carrito" element={<CartContainer/>}/>
+              <Route path="/nosotros" element={<Nosotros/>}/>
           </Routes>
           <Footer/>
       </BrowserRouter>
