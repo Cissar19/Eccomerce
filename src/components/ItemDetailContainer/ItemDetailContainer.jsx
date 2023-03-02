@@ -5,13 +5,12 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetailContainerCount from './ItemDetailContainerCount';
 import { cartContext } from '../../storage/cartContext';
-
+import Swal from 'sweetalert2'
 
 export default function ItemDetailContainer() {
   let {itemid} = useParams()
   let {cart, addItem} = useContext(cartContext)
   const [product, setProduct] = useState([]);
-
 
   const itemInCart = cart.find(item => item.id === product.id)
   let stockUpdated
@@ -23,9 +22,15 @@ export default function ItemDetailContainer() {
 
 
   function handleAddTocart(count){
-    alert(`Agregaste ${count} de ${product.title} al carrito`)
+    Swal.fire({
+      title: 'Felicitaciones ',
+      text: (`Agregaste ${count} de ${product.title} a tu carrito de compras`),
+      icon: 'success',
+      confirmButtonText: 'Cool'
+    })
     product.count = count
     addItem(product, count)
+    
   
   }
 

@@ -38,7 +38,7 @@ const {totalProducts} = useContext(cartContext)
             </nav>
             <Link to="/carrito">
               <button className="btn" >Carrito</button>
-              <button>{totalProducts() || ''}</button>
+              <span>{totalProducts() || ''}</span>
             </Link>
         </header>
     </>

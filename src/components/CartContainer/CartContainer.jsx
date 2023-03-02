@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { cartContext } from "../../storage/cartContext";
 import { createBuyOrder } from "../services/firebase";
 import "./CartContainer.css";
+import Swal from 'sweetalert2'
 
 function CartContainer() {
   const { cart, clearCart, removeProduct, totalPrice} = useContext(cartContext);
@@ -20,7 +21,13 @@ function CartContainer() {
     total:12
   }
   let id = await createBuyOrder(order)
-  alert(id)
+
+  Swal.fire({
+    title: 'Felicitaciones ',
+    text: (`Tu id de compra es: ${id} guardalo para hacer seguimiento de tu pedido`),
+    icon: 'success',
+    confirmButtonText: 'Cool'
+  })
   clearCart()
 }
 
