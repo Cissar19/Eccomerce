@@ -71,7 +71,7 @@ function CartContainer() {
       </div>
 
       <div className="cartList_detail">
-        <h4>El total de tu compra es de $ {totalPrice}</h4>
+        <h4>El total de tu compra es de $ {totalPrice()}</h4>
       </div>
     </>
   );

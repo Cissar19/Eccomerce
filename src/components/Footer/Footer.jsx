@@ -6,16 +6,16 @@ export default function Footer() {
         <footer>
           <div className="grid-container">
             <div className="grid-item">
-              <h3>About Us</h3>
-              <p>Some text about who we are and what we do.</p>
+              <h3>Nosotros</h3>
+              <p>Somos una joven tienda de comics y funkos!</p>
             </div>
             <div className="grid-item">
-              <h3>Contact Us</h3>
-              <p>Phone: 123-456-7890</p>
-              <p>Email: info@example.com</p>
+              <h3>Contactate</h3>
+              <p>Phone: 569 9496 0258</p>
+              <p>Email: contacto@gmail.com</p>
             </div>
             <div className="grid-item">
-              <h3>Follow Us</h3>
+              <h3>Siguenos en:</h3>
               <p>Facebook</p>
               <p>Twitter</p>
             </div>
