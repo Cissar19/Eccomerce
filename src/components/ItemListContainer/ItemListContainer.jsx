@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Item from '../Item/Item'
 import '../ItemListContainer/ItemListContainer.css'
-import getItems, { getItemsByCategory } from '../services/mockAsyncsService'
-
+import { getItemsByCategory } from '../services/firebase'
+import { getItems } from '../services/firebase'
 
 export default function ItemListContainer() {
     let {categoryid} = useParams()

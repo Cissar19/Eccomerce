@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import '../ItemDetailContainer/ItemDetailContainer.css'
-import { getSingleItem }  from '../services/mockAsyncsService'
+import { getSingleItem }  from '../services/firebase'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetailContainerCount from './ItemDetailContainerCount';
