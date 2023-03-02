@@ -6,16 +6,17 @@ import { useParams } from 'react-router-dom';
 import ItemDetailContainerCount from './ItemDetailContainerCount';
 import { cartContext } from '../../storage/cartContext';
 
+
 export default function ItemDetailContainer() {
   let {itemid} = useParams()
   let {addItem} = useContext(cartContext)
   const [product, setProduct] = useState([]);
 
+
   function handleAddTocart(count){
     alert(`Agregaste ${count} de ${product.title} al carrito`)
     product.count = count
-    
-    addItem(product)
+    addItem(product, count)
   
   }
 

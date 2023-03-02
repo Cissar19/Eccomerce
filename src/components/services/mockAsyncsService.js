@@ -5,7 +5,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_873213-MLC49233612771_022022-F.webp",
-        price:"32.934",
+        price:"12.934",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -14,7 +14,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_994778-MLC44299215903_122020-F.webp",
-        price:"32.934",
+        price:"37.136",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -23,7 +23,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_761277-MLC48956739709_012022-F.webp",
-        price:"32.934",
+        price:"5.923",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -32,7 +32,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_727937-MLC48959093648_012022-F.webp",
-        price:"32.934",
+        price:"2.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -41,7 +41,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_939880-MLC50060957059_052022-F.webp",
-        price:"32.934",
+        price:"22.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -50,7 +50,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_702815-MLA49411115388_032022-F.webp",
-        price:"32.934",
+        price:"45.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -59,7 +59,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_790726-MLC48329139872_112021-F.webp",
-        price:"32.934",
+        price:"7.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -68,7 +68,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_935575-MLC46219607021_052021-F.webp",
-        price:"32.934",
+        price:"22.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -77,7 +77,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_707044-MLC44527026672_012021-F.webp",
-        price:"32.934",
+        price:"19.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -86,7 +86,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_979616-MLC44494921291_012021-F.webp",
-        price:"32.934",
+        price:"11.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -95,7 +95,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_796752-MLC44527338270_012021-F.webp",
-        price:"32.934",
+        price:"14.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -104,7 +104,7 @@ const databaseItems = [
         category:"Marvel",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_650725-MLC49786878723_042022-F.webp",
-        price:"32.934",
+        price:"26.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -113,7 +113,7 @@ const databaseItems = [
         category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_817324-MLA52223355370_102022-F.webp",
-        price:"32.934",
+        price:"16.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -122,7 +122,7 @@ const databaseItems = [
         category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_957567-MLA52224405460_102022-F.webp",
-        price:"32.934",
+        price:"12.991",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -131,7 +131,7 @@ const databaseItems = [
         category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_758019-MLA50486069725_062022-F.webp",
-        price:"32.934",
+        price:"44.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -140,7 +140,7 @@ const databaseItems = [
         category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_913638-MLC49928303633_052022-F.webp",
-        price:"32.934",
+        price:"18.995",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -149,7 +149,7 @@ const databaseItems = [
         category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_614641-MLC51632356295_092022-F.webp",
-        price:"32.934",
+        price:"13.996",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -158,7 +158,7 @@ const databaseItems = [
         category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_666658-MLC41929267883_052020-F.webp",
-        price:"32.934",
+        price:"25.996",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -167,7 +167,7 @@ const databaseItems = [
         category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_699737-MLC51260143437_082022-F.webp",
-        price:"32.934",
+        price:"12.999",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
     {
@@ -176,7 +176,7 @@ const databaseItems = [
         category:"Funko",
         stock:1,
         imgurl:"https://http2.mlstatic.com/D_NQ_NP_2X_978018-MLC48484431255_122021-F.webp",
-        price:"32.934",
+        price:"8.997",
         detail:"Según el Joker, es lo único que separa cordura y locura. Tras quedar libre una vez más del Psiquiátrico de Arkham, está dispuesto a demostrarlo. Y va a utilizar al mejor policía de Gotham, el comisario Jim Gordon, y a su hija, Barbara"
     },
 ]

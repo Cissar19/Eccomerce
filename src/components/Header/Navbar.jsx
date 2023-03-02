@@ -2,8 +2,13 @@ import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { cartContext } from '../../storage/cartContext'
 
 export default function Navbar() {
+
+const {totalProducts} = useContext(cartContext)
+
   return (
     <>
         <header className="header">
@@ -31,7 +36,10 @@ export default function Navbar() {
                     </li>
             </ul>            
             </nav>
-            <Link to="/"><button className="btn" >Carrito</button> </Link>
+            <Link to="/carrito">
+              <button className="btn" >Carrito</button>
+              <button>{totalProducts() || ''}</button>
+            </Link>
         </header>
     </>
   )
