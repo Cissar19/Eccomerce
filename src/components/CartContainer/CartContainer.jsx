@@ -1,10 +1,29 @@
 import React from "react";
 import { useContext } from "react";
 import { cartContext } from "../../storage/cartContext";
+import { createBuyOrder } from "../services/firebase";
 import "./CartContainer.css";
 
 function CartContainer() {
-  const { cart, clearCart, removeProduct,totalPrice} = useContext(cartContext);
+  const { cart, clearCart, removeProduct, totalPrice} = useContext(cartContext);
+
+  async function handleCheckout(evt){
+  const items = cart.map(product => ({id: product.id, title:product.title, price:product.price, count:product.count}))
+  const order ={
+    buyer:{
+      name:"Cesar",
+      email:"cesar@gmail.com",
+      phone:"1234"
+    },
+    items: items,
+    date: new Date(),
+    total:12
+  }
+  let id = await createBuyOrder(order)
+  alert(id)
+  clearCart()
+}
+
   return (
     <>
       <h1>Tu Carrito</h1>
@@ -40,7 +59,7 @@ function CartContainer() {
 
       <div className="cartList_detail">
        <button onClick={clearCart}>Vaciar mi carrito</button>
-       <button>Finalizar Compra</button>
+       <button onClick={handleCheckout}>Finalizar Compra</button>
       </div>
 
       <div className="cartList_detail">

@@ -9,8 +9,17 @@ import { cartContext } from '../../storage/cartContext';
 
 export default function ItemDetailContainer() {
   let {itemid} = useParams()
-  let {addItem} = useContext(cartContext)
+  let {cart, addItem} = useContext(cartContext)
   const [product, setProduct] = useState([]);
+
+
+  const itemInCart = cart.find(item => item.id === product.id)
+  let stockUpdated
+  if(itemInCart)
+   stockUpdated = product.stock - itemInCart.count
+  else
+  stockUpdated = product.stock 
+      
 
 
   function handleAddTocart(count){
@@ -40,7 +49,7 @@ export default function ItemDetailContainer() {
           <h1>{product.title}</h1>
           <p>{product.detail}</p>
           <span>$ {product.price}</span>
-          <ItemDetailContainerCount onAddToCart={handleAddTocart}/>
+          <ItemDetailContainerCount stock= {stockUpdated}onAddToCart={handleAddTocart}/>
         </div>
       </div>
 

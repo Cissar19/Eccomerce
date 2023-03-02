@@ -5,13 +5,15 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Footer from './components/Footer/Footer';
 import { CartContextProvider } from './storage/cartContext';
 import CartContainer from './components/CartContainer/CartContainer';
-import { testApp } from './components/services/firebase';
+import { exportData} from './components/services/firebase';
+
 
 
 
 export default function App() {
   return (
     <CartContextProvider>    
+      <button onClick={exportData}>Seleccioname para obtener data</button>
         <BrowserRouter>
           <Navbar/>
           <Routes>

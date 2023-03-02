@@ -1,13 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
-export default function ItemDetailContainerCount({onAddToCart}) {
+export default function ItemDetailContainerCount({onAddToCart, stock}) {
 
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(0)
 
     const disminuir = ()=>{
         setCount(count - 1)
     }
     const aumentar = ()=>{
+        if(count < stock)
         setCount(count + 1)
     }
 
